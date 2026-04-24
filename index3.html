@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skills</title>
+
+<!-- FONT AWESOME -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background: black;
+    color: white;
+}
+
+/* HEADER */
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1.5rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 3rem;
+    color: #b74b4b;
+    font-weight: 800;
+}
+
+nav a{
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 3rem;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active{
+    color: #b74b4b;
+}
+
+/* SECTION */
+section{
+    padding: 10rem 9% 5rem;
+    text-align: center;
+}
+
+h1{
+    font-size: 5rem;
+    margin-bottom: 4rem;
+}
+
+span{
+    color: #b74b4b;
+}
+
+/* GRID */
+.skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+/* CARD */
+.skill-card{
+    background: #161616;
+    width: 26rem;
+    padding: 3rem 2rem;
+    border-radius: 1.5rem;
+    transition: 0.3s;
+}
+
+.skill-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #b74b4b;
+}
+
+.skill-card i{
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+    color: #b74b4b;
+}
+
+.skill-card h3{
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.skill-card p{
+    font-size: 1.4rem;
+    color: #ccc;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Ahmad</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="skills.html" class="active">Skills</a>
+        <a href="#">Education</a>
+        <a href="#">Experience</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section>
+    <h1>My <span>Skills</span></h1>
+
+    <div class="skills-container">
+
+        <div class="skill-card">
+            <i class="fa-brands fa-html5"></i>
+            <h3>HTML</h3>
+            <p>Strong understanding of semantic structure and layout building.</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fa-brands fa-css3-alt"></i>
+            <h3>CSS</h3>
+            <p>Responsive design using Flexbox and modern styling techniques.</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fa-solid fa-pen-nib"></i>
+            <h3>Content Creation</h3>
+            <p>Creating engaging ideas, scripts, and visual content for digital platforms.</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fa-solid fa-dumbbell"></i>
+            <h3>Fitness Discipline</h3>
+            <p>Consistency, routine building, and physical training knowledge.</p>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>

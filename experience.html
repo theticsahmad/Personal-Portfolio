@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Experience</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background: black;
+    color: white;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1.5rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 3rem;
+    color: #b74b4b;
+    font-weight: 800;
+}
+
+nav a{
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 3rem;
+}
+
+nav a.active{
+    color: #b74b4b;
+}
+
+section{
+    padding: 10rem 9% 5rem;
+}
+
+h1{
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+span{
+    color: #b74b4b;
+}
+
+.timeline{
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.timeline::before{
+    content: '';
+    position: absolute;
+    left: 1.2rem;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: repeating-linear-gradient(
+        to bottom,
+        #333,
+        #333 6px,
+        transparent 6px,
+        transparent 12px
+    );
+}
+
+.item{
+    position: relative;
+    padding-left: 5rem;
+    margin-bottom: 5rem;
+}
+
+
+.item::before{
+    content: '';
+    position: absolute;
+    left: 0.8rem;
+    top: 0.6rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: #b74b4b;
+    border-radius: 50%;
+}
+
+.item h3{
+    font-size: 2.3rem;
+    transition: 0.3s;
+}
+
+
+.item p{
+    font-size: 1.5rem;
+    color: #ccc;
+    line-height: 1.6;
+    margin-top: 0.5rem;
+
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+.item:hover h3{
+    color: #b74b4b;
+}
+
+.item:hover p{
+    opacity: 1;
+    max-height: 200px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Ahmad</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="skills.html">Skills</a>
+        <a href="experience.html" class="active">Experience</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section>
+    <h1>My <span>Experience</span></h1>
+
+    <div class="timeline">
+
+        <div class="item">
+            <h3>My First Web Project</h3>
+            <p>
+                To be honest, This is my first real project. I'm still learning and still making mistakes Through tutorials. I started with no practical experience and struggled with layout, positioning, and structure. Through trial and error, I slowly learned how a webpage is built. Still i dont know much about it and still am as confused as ever, but i'm dedicated to learn and improve. honestly, errors are better than solving because they are fun to learn and solve!
+            </p>
+        </div>
+
+        <div class="item">
+            <h3>Learning Through Practice</h3>
+            <p>
+                I improved mainly by building small projects and breaking things on purpose to understand how CSS behaves. This helped me learn faster than just watching tutorials.
+            </p>
+        </div>
+
+        <div class="item">
+            <h3>Current Progress</h3>
+            <p>
+                I am still learning and improving my skills. My primary focus is mastering html, css and gaining consistency in web development.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>

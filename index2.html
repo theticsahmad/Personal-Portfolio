@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background: black;
+    color: white;
+}
+
+/* HEADER */
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1.5rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+}
+
+.logo{
+    font-size: 3rem;
+    color: #b74b4b;
+    font-weight: 800;
+}
+
+nav a{
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 3rem;
+}
+
+nav a.active{
+    color: #b74b4b;
+}
+
+/* SECTION */
+section{
+    padding: 10rem 9% 5rem;
+}
+
+h1{
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+span{
+    color: #b74b4b;
+}
+
+/* SERVICES */
+.services{
+    max-width: 700px;
+    margin: auto;
+}
+
+/* ITEM */
+.service{
+    position: relative;
+    padding: 2rem;
+    border-bottom: 1px solid #333;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/* TITLE */
+.service h3{
+    font-size: 2.2rem;
+    transition: 0.3s;
+}
+
+/* HIDDEN TEXT */
+.service p{
+    font-size: 1.5rem;
+    color: #ccc;
+    margin-top: 0.5rem;
+
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.service:hover h3{
+    color: #b74b4b;
+}
+
+.service:hover p{
+    opacity: 1;
+    transform: translateY(0);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Ahmad</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="skills.html">Skills</a>
+        <a href="#">Education</a>
+        <a href="#">Experience</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section>
+    <h1>My <span>Services</span></h1>
+
+    <div class="services">
+
+        <div class="service">
+            <h3>Web Development</h3>
+            <p>I build responsive websites using HTML and CSS.</p>
+        </div>
+
+        <div class="service">
+            <h3>UI Design</h3>
+            <p>Clean, modern and user-friendly interface design.</p>
+        </div>
+
+        <div class="service">
+            <h3>Content Creation</h3>
+            <p>Planning ideas, writing scripts and building content structure.</p>
+        </div>
+
+        <div class="service">
+            <h3>Fitness Guidance</h3>
+            <p>Helping build discipline, consistency and workout routines.</p>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
